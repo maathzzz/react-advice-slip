@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import adviceHand from './advice.png'
 import './styles.css';
 
 export function Home() {
@@ -28,7 +29,7 @@ export function Home() {
     <div className="container">
       {/* <h1> Advice Slip - React </h1> */}
       {/* <input type="text" placeholder="Digite o Seu Nome..."></input> */}
-      <img src="././../src/assets/img/android-chrome-512x512.png"></img>
+      <img src={adviceHand}></img>
       {/* se não haver () então () senão () */}
       <div id="advice-results" className='advice-results'>{!adviceData?.slip.advice ? 'Loading...' : adviceData?.slip.advice}</div>
       <button type="button" onClick={getAdvice}> :) </button>
